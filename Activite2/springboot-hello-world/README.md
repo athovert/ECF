@@ -5,14 +5,12 @@ This is a small Spring-Boot Hello World application to demonstrate a quick and s
 It has one endpoint which returns a JSON response containing the hostname and IP of the server and an obligatory hello world message. 
 
 ## Requirements
- * Java 1.8
+ * Java 1.17
  * Maven
  
 ## Using the API
 Simply start the app and make a HTTP GET request to http://localhost:8080/ and you will get a JSON response.
 
-## Docker Build
-The application has been built and packaged in a Docker container and published to DockerHub: https://hub.docker.com/r/kimb88/hello-world-spring-boot/
 
 ## How To
 
@@ -36,7 +34,7 @@ java -jar ./target/spring-boot-hello-world-1.0.0-SNAPSHOT.jar
 mvn verify
 ```
 
-#### Docker Build
+#### Docker Build with Maven
 ```
 mvn package docker:build
 ```
